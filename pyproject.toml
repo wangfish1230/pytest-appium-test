@@ -1,0 +1,58 @@
+[project]
+name = "pytest-appium-test"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Cherry Wang",email = "cherry.cy.wang@viewsonic.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "black (>=26.1.0,<27.0.0)",
+    "isort (>=8.0.1,<9.0.0)"
+]
+
+[tool.black]
+line-length = 120
+target-version = ['py310']
+include = '\.pyi?$'
+exclude = '''
+(
+    .git
+  | .venv
+)
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 120
+skip = [
+    '.bzr',
+    '.direnv',
+    '.eggs',
+    '.git',
+    '.hg',
+    '.mypy_cache',
+    '.nox',
+    '.pants.d',
+    '.svn',
+    '.tox',
+    '.venv',
+    '__pypackages__',
+    '_build',
+    'buck-out',
+    'build',
+    'dist',
+    'venv',
+    '__pycache__',
+    'report',
+]
