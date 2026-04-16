@@ -7,7 +7,7 @@ options = UiAutomator2Options()
 options.platform_name = "Android"
 options.device_name = "Android"
 
-# ⚠️ 改成你的 APK 路徑
+# ⚠️ 改成 APK 路徑
 options.app = "/Users/cherry.cy.wang/Desktop/ApiDemos-release.apk"
 # ✅ 改成 ApiDemos 的
 options.app_package = "io.appium.android.apis"
