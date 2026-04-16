@@ -81,24 +81,24 @@ COMMANDS = {
 # ============================================================================
 
 ANDROID_CAPABILITIES = {
-    'platformName': 'Android',
-    'automationName': 'UiAutomator2',
-    'deviceName': 'Android Emulator',
+    "platformName": "Android",
+    "automationName": "UiAutomator2",
+    "deviceName": "Android Emulator",
     # 方案 A: 使用本地 APK
-    'app': '/path/to/app.apk',
+    "app": "/path/to/app.apk",
     # 方案 B: 使用应用包名和启动活动（应用已安装）
     # 'appPackage': 'com.example.app',
     # 'appActivity': '.MainActivity',
-    'autoGrantPermissions': True,
+    "autoGrantPermissions": True,
 }
 
 IOS_CAPABILITIES = {
-    'platformName': 'iOS',
-    'automationName': 'XCUITest',
-    'deviceName': 'iPhone 15',
-    'udid': 'auto',  # 自动选择可用设备
-    'bundleId': 'com.example.app',
-    'app': '/path/to/app.app',
+    "platformName": "iOS",
+    "automationName": "XCUITest",
+    "deviceName": "iPhone 15",
+    "udid": "auto",  # 自动选择可用设备
+    "bundleId": "com.example.app",
+    "app": "/path/to/app.app",
 }
 
 # ============================================================================

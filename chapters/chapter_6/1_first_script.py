@@ -1,6 +1,7 @@
+from time import sleep
+
 from appium import webdriver
 from appium.options.android import UiAutomator2Options
-from time import sleep
 
 options = UiAutomator2Options()
 

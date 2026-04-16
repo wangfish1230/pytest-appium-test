@@ -1,6 +1,7 @@
+from time import sleep
+
 from appium import webdriver
 from appium.options.android import UiAutomator2Options
-from time import sleep
 
 # ==============================
 # 1️⃣ 建立設定物件（告訴 Appium 要怎麼連線）
@@ -34,10 +35,7 @@ options.app_activity = "com.android.calculator2.Calculator"
 
 # 這行會做：
 # Python → 連線到 Appium → 控制 Android
-driver = webdriver.Remote(
-    "http://127.0.0.1:4723",  # Appium Server 位址（本機）
-    options=options           # 上面設定的參數
-)
+driver = webdriver.Remote("http://127.0.0.1:4723", options=options)  # Appium Server 位址（本機）  # 上面設定的參數
 
 # ==============================
 # 4️⃣ 測試動作（這裡先簡單等待）
